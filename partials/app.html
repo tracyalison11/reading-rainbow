@@ -1,9 +1,9 @@
 <h1>Reading Rainbow</h1>
 
 <div class="row" ng-controller="BookController as BookController">
-    <button class="btn btn-default">Create Review</button>
+    <button class="btn btn-default" ng-click="reviewFormController.showForm = !reviewFormController.showForm">{{reviewFormController.showForm ? "Cancel": "Create Review"}}</button>
     <hr />
-    <review-form ng-show="reviewFormController.showForm"></review-form>
+    <review-form books="reviewFormController.books" genres="reviewFormController.genres" ng-show="reviewFormController.showForm"></review-form>
     <hr />
     <ul class="list-unstyled col-sm-8">
         <li class="book row" ng-repeat="book in BookController.books">

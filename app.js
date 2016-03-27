@@ -30,8 +30,13 @@
         replace: true,
         controller: function(){
           this.showForm = false;
+          this.book = {genres:{}};
         },
-        controllerAs: 'reviewFormController'
+        controllerAs: 'reviewFormController',
+        scope: {
+          books: '=',
+          genres: '='
+        }
       }
     });
   
