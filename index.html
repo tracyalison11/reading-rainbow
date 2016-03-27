@@ -8,33 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
 </head>
-<body>
-<h1>Reading Rainbow</h1>
 
-<div class="row" ng-controller="BookController as BookController">
-  <button class="btn btn-default">Create Review</button>
-  <hr />
-  <review-form></review-form>
-  <hr />
-  <ul class="list-unstyled col-sm-8">
-    <li class="book row" ng-repeat="book in BookController.books">
 
-      <book-cover></book-cover>
+<body ng-app="readingRainbow">
+<div class="container" ng-include="'partials/app.html'"></div>
 
-      <div class="col-sm-9">
-        <h3><a href="http://www.amazon.com/gp/product/{{book.isbn}}">{{book.title}}</a></h3>
-
-        <cite class="text-muted">{{book.author}}</cite>
-
-        <p>{{book.review}}</p>
-
-        <book-genres></book-genres>
-
-      </div>
-    </li>
-  </ul>
-
-</div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
