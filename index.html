@@ -11,16 +11,31 @@
 <body>
 <h1>Reading Rainbow</h1>
 
-<div class="row">
+<div class="row" ng-controller="BookController as BookController">
   <button class="btn btn-default">Create Review</button>
   <hr />
 
   <hr />
   <ul class="list-unstyled col-sm-8">
-    <li class="book row">
+    <li class="book row" ng-repeat="book in BookController.books">
       <aside class="col-sm-3">
-        <a href="http://www.amazon.com/Adventures-Wonderland-Through-Looking-Glass-Classics/dp/0553213458/ref=sr_1_1?s=books&ie=UTF8&qid=1459047197&sr=1-1&keywords=alice+in+wonderland"><img ng-src="" alt="Book Cover" class="full"></a>
+        <a href="http://www.amazon.com/gp/product/{{book.isbn}}"><img ng-src="http://images.amazon.com/images/P/{{book.isbn}}.01.ZTZZZZZZ.jpg" alt="Cover of {{book.title}}" class="full"></a>
+
+        <p class="goodRating rating">{{book.rating}}</p>
       </aside>
+      <div class="col-sm-9">
+        <h3><a href="http://www.amazon.com/gp/product/{{book.isbn}}">{{book.title}}</a></h3>
+
+        <cite class="text-muted">{{book.author}}</cite>
+
+        <p>{{book.review}}</p>
+
+        <ul class="list-unstyled">
+          <li>
+            <span class="label label-primary" ng-repeat="(genre, state) in book.genres" ng-show="state">{{genre}}</span>
+          </li>
+        </ul>
+      </div>
     </li>
   </ul>
 
