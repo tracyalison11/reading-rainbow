@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-var a  = angular.module('readingRainbow', [ ])
+    angular.module('readingRainbow', [ ])
 
-    a.controller('BookController', function(){
+    controller('BookController', function(){
       this.books = books;
       this.genres = genres;
     });
