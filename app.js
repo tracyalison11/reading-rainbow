@@ -55,33 +55,71 @@
 
   var books = [
     {
-      title: 'A Game of Thrones: A Song of Ice and Fire',
-      author: 'George R.R. Martin',
-      isbn: '0553593714',
-      review: 'The most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. I loved this book!',
+      title: 'The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers',
+      author: 'Ben Horowitz',
+      isbn: '0062273205',
+      review: 'Great book with wonderful anecdotes about how to handle tough situations. Ben is a great story teller.',
       rating: 4,
-      genres: { 'non-fiction': true, fantasy: true }
+      genres: { 'non-fiction': true }
     },{
-      title: 'HTML for Babies',
-      author: 'John C Vanden-Heuvel Sr',
-      isbn: '0615487661',
-      review: "It's never too early to be standards compliant! I taught my little one mark-up in under one hour!",
+      title: 'Zero to One: Notes on Startups, or How to Build the Future',
+      author: 'Peter Thiel',
+      isbn: '0804139296',
+      review: "A great book to allow you to consider business and the future from alternative perspectives. A must read.",
       rating: 5,
-      genres: { fiction: true }
+      genres: { 'non-fiction': true }
     },{
-      title: 'A is for Array',
-      author: 'Brandon J Hansen',
-      isbn: '1489522212',
-      review: 'A is for Array is the ABC book for future programmers. Filled with fun illustrations and simple real-world examples, my children loved seeing my world intertwined with theirs!',
+      title: 'A Smarter Way to Learn JavaScript: The new approach that uses technology to cut your effort in half',
+      author: 'Mark Myers',
+      isbn: '1497408180',
+      review: 'The best way to introduce you developers to javascript. A lot easier to commit to memory with all of the exercises.',
       rating: 4,
-      genres: { fiction: true }
+      genres: { 'non-fiction': true }
     },{
-      title: 'The Dragon Reborn',
-      author: 'Robert Jordan',
-      isbn: '0812513711',
-      review: 'The Wheel weaves as the Wheel wills, and we are only the thread of the Pattern. Moiraine',
+      title: 'The Poisonwood Bible: A Novel',
+      author: 'Barbara Kingsolver',
+      isbn: '0061577073',
+      review: 'An amazing story',
       rating: 4,
-      genres: { 'non-fiction': true, fantasy: true }
+      genres: { 'fiction': true }
+    },{
+      title: 'Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days',
+      author: 'Jake Knapp',
+      isbn: '150112174X',
+      review: 'Still reading this book',
+      rating: 4,
+      genres: { 'non-fiction': true }
+    },{
+      title: 'Love, Loss, and What We Ate: A Memoir',
+      author: 'Padma Lakshmi',
+      isbn: '0062202618',
+      review: 'Still reading this book',
+      rating: 4,
+      genres: { 'non-fiction': true }
+    },
+    {
+      title: 'I Drink for a Reason',
+      author: 'David Cross',
+      isbn: '0446697710',
+      review: 'Hilarious book. Lots of interesting stories and hypothetical situations. I recommend the audio version as well. Cross does a great job reading it.',
+      rating: 4,
+      genres: { 'fiction': true }
+    },
+    {
+      title: 'This Charming Man',
+      author: 'Marian Keyes',
+      isbn: '0061124044',
+      review: 'One of the best books I have ever read. It starts off slowly but is well worth the read. A fascinating story.',
+      rating: 5,
+      genres: { 'fiction': true }
+    },
+    {
+      title: 'The Brightest Star in the Sky',
+      author: 'Marian Keyes',
+      isbn: '0143118498',
+      review: 'Another one of Marian Keyes best books. She truly is an amazing story teller',
+      rating: 4,
+      genres: { 'fiction': true }
     }
   ];
 
